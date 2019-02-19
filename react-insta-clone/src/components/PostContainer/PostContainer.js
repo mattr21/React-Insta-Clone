@@ -8,7 +8,7 @@ const PostContainer = props => {
     return (
         <div className="postContainer">
           {props.post.comments.map(comment => <CommentSection comment={comment} />)}
-          <input type="text" defaultValue="Add a comment..."/>
+          <input className="input" type="text" placeholder="Add a comment..."/>
         </div>
     );
 }
