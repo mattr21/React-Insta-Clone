@@ -7,16 +7,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: dummyData 
+      posts: dummyData 
     };
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.data.map(instance => (
-          <PostContainer />
-        ))}
+      {this.state.posts.map(post => <PostContainer post=
+      {post}/>)}
       </div>
     );
   }
