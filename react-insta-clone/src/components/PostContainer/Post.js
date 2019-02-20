@@ -4,7 +4,7 @@ const Post = props => {
     // console.log(props, "Post")
     return (
         <div>
-            <img src={props.imageUrl} alt=""/>
+            <img className="postPic" src={props.imageUrl} alt=""/>
         </div>
     );
 }
