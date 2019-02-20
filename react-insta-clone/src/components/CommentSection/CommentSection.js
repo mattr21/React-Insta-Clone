@@ -1,15 +1,24 @@
 import React from 'react';
-import Comment from './Comment'
+import Comments from './Comments'
 import './CommentSection.css'
+import AddComment from './AddComment'
 
 
 const CommentSection = props => {
     // console.log(props, "CommentSection")
     return (
         <div>
-            <Comment username={props.comment.username} text={props.comment.text}/>
-        </div>
+            <div>
+                <i class="far fa-heart fa-lg"></i>
+                <i class="far fa-comment fa-lg"></i>
 
+                <p><strong>{props.likes} likes</strong></p>
+
+                {props.comments.map(comment => <Comments comment={comment} />)}
+
+                <AddComment />
+            </div>
+        </div>
     );
 }
 
