@@ -13,14 +13,9 @@ const PostContainer = props => {
             thumbnailUrl={props.post.thumbnailUrl} username={props.post.username}
           />
 
-          <Post 
-            imageUrl={props.post.imageUrl}
-          />
+          <Post imageUrl={props.post.imageUrl} />
 
-          <CommentSection
-            likes={props.post.likes} 
-            comments={props.post.comments} 
-          />
+          <CommentSection post={props.post} />
         </div>
     );
 }
