@@ -8,7 +8,14 @@ const SearchBar = props => {
                 <i class="fab fa-instagram fa-2x"></i>
                 <p className="instagramWord">Instagram</p>
             </div>
-            <input className="searchInput" type="text" placeholder="Search"/>
+
+            <input 
+                onKeyDown={props.searchFilter} 
+                className="searchInput" 
+                type="text" 
+                placeholder="Search"
+            />
+            
             <div className="right">
                 <i class="far fa-compass fa-lg"></i>
                 <i class="far fa-heart fa-lg"></i>
